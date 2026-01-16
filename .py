@@ -4,6 +4,7 @@ class Solution:
         left=0
         right=length-1
         adi=[]
+        
         while left < right:
             total=numbers[left]+numbers[right]
             if total==target:
@@ -14,4 +15,5 @@ class Solution:
                 right-=1
             else:
                 left+=1
+                
         return adi
